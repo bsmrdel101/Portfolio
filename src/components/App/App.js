@@ -1,9 +1,10 @@
+import Header from '../Header/Header';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <h1>BEAN</h1>
+      <Header />
     </div>
   );
 }
