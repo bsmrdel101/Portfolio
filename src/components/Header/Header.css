@@ -1,8 +1,8 @@
 .header-container {
     margin-top: 56px;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.1)
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
     ), center no-repeat url('../../../public/portfolio_background.jpg');
     background-size: cover;
     height: 60vh;
