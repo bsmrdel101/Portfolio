@@ -1,7 +1,16 @@
 #navbarNav {
-    justify-content: end;
+    justify-content: center;
+    font-size: 19px;
 }
 
-.nav-item:hover {
+.nav-link {
+    transition: ease 0.2s;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.nav-link:hover {
     cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
 }
