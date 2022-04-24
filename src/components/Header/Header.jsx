@@ -8,8 +8,10 @@ function Header() {
             {/* Header content */}
             <center>
                 <header className='header-container'>
-                    <h1>Bennett Smrdel</h1>
-                    <h3>Full Stack Developer</h3>
+                    <div className='header-text'>
+                        <h1>Bennett Smrdel</h1>
+                        <h3>Full Stack Developer</h3>
+                    </div>
                 </header>
             </center>
         </div>

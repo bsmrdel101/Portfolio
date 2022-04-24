@@ -1,3 +1,7 @@
 #navbarNav {
     justify-content: end;
 }
+
+.nav-item:hover {
+    cursor: pointer;
+}
