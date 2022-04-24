@@ -12,3 +12,15 @@
     padding-top: 80px;
     color: white;
 }
+
+@media (max-width: 980px) {
+    .header-text {
+        padding-top: 120px;
+    }
+    .header-text h1 {
+        font-size: 28px;
+    }
+    .header-text h3 {
+        font-size: 19px;
+    }
+}
