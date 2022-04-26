@@ -1,6 +1,25 @@
 import './Nav.css';
 
 function Nav() {
+    const getOffset = (el) => {
+        const rect = el.getBoundingClientRect();
+        return {
+          left: rect.left + window.scrollX,
+          top: rect.top + window.scrollY
+        };
+    }
+
+    const scrollToElement = (element) => {
+        switch (element) {
+            case 'about':
+                const about = getOffset(document.getElementById('about')).top;
+                window.scrollTo(0, about - 65);
+                break;
+            default:
+                break;
+        }
+    }
+    
     return (
         <>
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
@@ -11,7 +30,7 @@ function Nav() {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link">About</a>
+                                <a class="nav-link" onClick={() => scrollToElement('about')}>About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link">Portfolio</a>
