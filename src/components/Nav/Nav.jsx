@@ -15,6 +15,14 @@ function Nav() {
                 const about = getOffset(document.getElementById('about')).top;
                 window.scrollTo(0, about - 65);
                 break;
+            case 'portfolio':
+                const portfolio = getOffset(document.getElementById('portfolio')).top;
+                window.scrollTo(0, portfolio - 65);
+                break;
+            case 'contact':
+                const contact = getOffset(document.getElementById('contact')).top;
+                window.scrollTo(0, contact - 65);
+                break;
             default:
                 break;
         }
@@ -33,10 +41,10 @@ function Nav() {
                                 <a class="nav-link" onClick={() => scrollToElement('about')}>About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Portfolio</a>
+                                <a class="nav-link" onClick={() => scrollToElement('portfolio')}>Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Contact</a>
+                                <a class="nav-link" onClick={() => scrollToElement('contact')}>Contact</a>
                             </li>
                         </ul>
                     </div>
