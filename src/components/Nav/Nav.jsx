@@ -11,6 +11,10 @@ function Nav() {
 
     const scrollToElement = (element) => {
         switch (element) {
+            case 'skills':
+                const skills = getOffset(document.getElementById('skills')).top;
+                window.scrollTo(0, skills - 65);
+                break;
             case 'about':
                 const about = getOffset(document.getElementById('about')).top;
                 window.scrollTo(0, about - 65);
@@ -37,6 +41,9 @@ function Nav() {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" onClick={() => scrollToElement('skills')}>Skills</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" onClick={() => scrollToElement('about')}>About</a>
                             </li>
